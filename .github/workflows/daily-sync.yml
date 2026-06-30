@@ -54,7 +54,9 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: daily-sync-${{ github.run_number }}
+          # Include the attempt so manual re-runs never collide with an
+          # artifact produced by an earlier attempt of the same run.
+          name: daily-sync-${{ github.run_number }}-${{ github.run_attempt }}
           path: |
             artifacts/run_reports/daily_sync_*.json
             artifacts/logs/daily-sync.log

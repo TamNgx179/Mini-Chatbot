@@ -63,6 +63,7 @@ class RemoteDocument:
     filename: str
     sha256: str
     file_id: str
+    created_at: int = 0
 
 
 @dataclass(frozen=True)
@@ -304,6 +305,7 @@ class OpenAIVectorStoreDeltaSync:
         self.vector_store_id = vector_store_id
         self.chunking = chunking
         self.batch_size = batch_size
+        self.duplicate_documents: list[RemoteDocument] = []
 
     def load_remote_documents(
         self,
@@ -337,6 +339,7 @@ class OpenAIVectorStoreDeltaSync:
 
         # Remote manifest keyed by article_id.
         documents: dict[str, RemoteDocument] = {}
+        self.duplicate_documents = []
 
         # Build filename -> LocalDocument map for bootstrapping legacy files.
         bootstrap_by_filename = {
@@ -399,18 +402,37 @@ class OpenAIVectorStoreDeltaSync:
                         )
                         LOGGER.info("Bootstrapped remote attributes for %s", filename)
 
-                # Duplicate article IDs in Vector Store would break delta planning.
-                if article_id in documents:
-                    raise VectorStoreDeltaSyncError(
-                        f"Duplicate Article ID in Vector Store: {article_id}"
-                    )
-                
-                # Save remote document record.
-                documents[article_id] = RemoteDocument(
+                candidate = RemoteDocument(
                     article_id=article_id,
                     filename=filename,
                     sha256=digest,
                     file_id=vector_file.id,
+                    created_at=int(getattr(vector_file, "created_at", 0) or 0),
+                )
+
+                # OpenAI file removal is eventually consistent. During that
+                # window both the old and replacement copy may be listed.
+                # Keep the newest completed copy and clean the stale one in
+                # apply() instead of failing the entire daily job.
+                existing = documents.get(article_id)
+                if existing is None:
+                    documents[article_id] = candidate
+                    continue
+
+                if (candidate.created_at, candidate.file_id) > (
+                    existing.created_at,
+                    existing.file_id,
+                ):
+                    documents[article_id] = candidate
+                    stale = existing
+                else:
+                    stale = candidate
+                self.duplicate_documents.append(stale)
+                LOGGER.warning(
+                    "Duplicate Article ID %s: keeping newest file and "
+                    "queuing stale file %s for cleanup",
+                    article_id,
+                    stale.file_id,
                 )
         return documents
 
@@ -490,27 +512,51 @@ class OpenAIVectorStoreDeltaSync:
         # Obsolete remote files are:
         # - old remote versions of updated documents
         # - documents removed from the source corpus
-        obsolete = [item.remote for item in plan.updated] + list(plan.removed)
+        obsolete_candidates = (
+            [item.remote for item in plan.updated]
+            + list(plan.removed)
+            + self.duplicate_documents
+        )
+        obsolete = list(
+            {item.file_id: item for item in obsolete_candidates}.values()
+        )
         detached = 0
         deleted_objects = 0
 
         # Detach and delete obsolete files.
         for document in obsolete:
-            self.client.vector_stores.files.delete(
-                document.file_id,
-                vector_store_id=self.vector_store_id,
-            )
-            detached += 1
+            try:
+                self.client.vector_stores.files.delete(
+                    document.file_id,
+                    vector_store_id=self.vector_store_id,
+                )
+                detached += 1
+            except Exception as error:
+                # A previous run may already have detached the file while an
+                # eventually-consistent list response still returns it.
+                if getattr(error, "status_code", None) == 404:
+                    LOGGER.info(
+                        "Vector Store file %s was already detached",
+                        document.file_id,
+                    )
+                else:
+                    raise
             try:
                 self.client.files.delete(document.file_id)
                 deleted_objects += 1
             except Exception as error:  # pragma: no cover - remote cleanup warning
-                LOGGER.warning(
-                    "Detached %s but could not delete File object %s: %s",
-                    document.filename,
-                    document.file_id,
-                    error,
-                )
+                if getattr(error, "status_code", None) == 404:
+                    LOGGER.info(
+                        "OpenAI File object %s was already deleted",
+                        document.file_id,
+                    )
+                else:
+                    LOGGER.warning(
+                        "Detached %s but could not delete File object %s: %s",
+                        document.filename,
+                        document.file_id,
+                        error,
+                    )
 
         # Retrieve updated Vector Store usage.
         store = self.client.vector_stores.retrieve(self.vector_store_id)

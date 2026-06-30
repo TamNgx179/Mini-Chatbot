@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "20260630T092020Z",
+  "timestamp_utc": "20260630T140213Z",
   "mode": "daily_sync",
   "status": "completed",
   "vector_store_id": "vs_6a4340bbf43481918cff2ccefba7b4aa",
@@ -422,6 +422,7 @@
     ],
     "removed": []
   },
+  "duplicate_remote_files": 1,
   "chunk_estimate": {
     "corpus": {
       "source_files": 402,
@@ -2450,8 +2451,8 @@
   "openai": {
     "batch_ids": [],
     "uploaded_files": 0,
-    "detached_files": 0,
+    "detached_files": 1,
     "deleted_file_objects": 0,
-    "vector_store_bytes": 2927714
+    "vector_store_bytes": 2930469
   }
 }

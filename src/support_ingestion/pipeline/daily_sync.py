@@ -247,11 +247,12 @@ def run_daily_sync(
 
         # Log required delta counts.
         LOGGER.info(
-            "Delta: added=%d updated=%d skipped=%d removed=%d",
+            "Delta: added=%d updated=%d skipped=%d removed=%d duplicates=%d",
             len(delta.added),
             len(delta.updated),
             len(delta.skipped),
             len(delta.removed),
+            len(synchronizer.duplicate_documents),
         )
 
         if dry_run:
@@ -297,6 +298,7 @@ def run_daily_sync(
             "source_files": corpus_estimate.source_files,
         },
         "delta": delta.to_dict(),
+        "duplicate_remote_files": len(synchronizer.duplicate_documents),
         "chunk_estimate": {
             "corpus": corpus_estimate.to_dict(),
             "uploaded_delta": changed_estimate,

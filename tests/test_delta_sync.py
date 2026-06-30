@@ -43,21 +43,26 @@ class FakeFilesAPI:
         return SimpleNamespace(id=file_id, deleted=True)
 
 
+class FakeNotFoundError(Exception):
+    status_code = 404
+
+
 class FakeVectorStoreFilesAPI:
     def __init__(self) -> None:
         self.updated: list[tuple[str, dict[str, str]]] = []
         self.deleted: list[str] = []
+        self.already_detached: set[str] = set()
+        self.list_data = [
+            SimpleNamespace(
+                id="file-old",
+                status="completed",
+                attributes=None,
+                created_at=1,
+            )
+        ]
 
     def list(self, **_: object) -> FakePage:
-        return FakePage(
-            [
-                SimpleNamespace(
-                    id="file-old",
-                    status="completed",
-                    attributes=None,
-                )
-            ]
-        )
+        return FakePage(self.list_data)
 
     def update(
         self,
@@ -70,6 +75,8 @@ class FakeVectorStoreFilesAPI:
         return SimpleNamespace(id=file_id, attributes=attributes)
 
     def delete(self, file_id: str, **_: object) -> SimpleNamespace:
+        if file_id in self.already_detached:
+            raise FakeNotFoundError(file_id)
         self.deleted.append(file_id)
         return SimpleNamespace(id=file_id, deleted=True)
 
@@ -190,6 +197,71 @@ class DeltaSyncTests(unittest.TestCase):
             self.assertEqual(2, len(entries))
             self.assertEqual(chunking.api_payload, entries[0]["chunking_strategy"])
             self.assertEqual("1", entries[0]["attributes"]["article_id"])
+
+    def test_keeps_newest_duplicate_and_cleans_stale_copy(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "article.md"
+            path.write_text("# Current\nArticle ID: 7\n", encoding="utf-8")
+            local = build_local_documents([path])
+            files = FakeFilesAPI()
+            vector_stores = FakeVectorStoresAPI()
+            vector_stores.files.list_data = [
+                SimpleNamespace(
+                    id="file-stale",
+                    status="completed",
+                    created_at=10,
+                    attributes={
+                        "article_id": "7",
+                        "filename": "article.md",
+                        "sha256": "old-hash",
+                    },
+                ),
+                SimpleNamespace(
+                    id="file-current",
+                    status="completed",
+                    created_at=20,
+                    attributes={
+                        "article_id": "7",
+                        "filename": "article.md",
+                        "sha256": local["7"].sha256,
+                    },
+                ),
+            ]
+            client = SimpleNamespace(files=files, vector_stores=vector_stores)
+            synchronizer = OpenAIVectorStoreDeltaSync(
+                client,
+                "vs-test",
+                ChunkingConfig(),
+            )
+
+            remote = synchronizer.load_remote_documents()
+            plan = plan_delta(local, remote)
+            result = synchronizer.apply(plan)
+
+            self.assertEqual("file-current", remote["7"].file_id)
+            self.assertEqual(1, len(plan.skipped))
+            self.assertEqual(1, result.detached_files)
+            self.assertEqual(["file-stale"], vector_stores.files.deleted)
+
+    def test_duplicate_cleanup_is_safe_when_already_detached(self) -> None:
+        files = FakeFilesAPI()
+        vector_stores = FakeVectorStoresAPI()
+        vector_stores.files.already_detached.add("file-stale")
+        client = SimpleNamespace(files=files, vector_stores=vector_stores)
+        synchronizer = OpenAIVectorStoreDeltaSync(
+            client,
+            "vs-test",
+            ChunkingConfig(),
+        )
+        synchronizer.duplicate_documents = [
+            RemoteDocument("7", "article.md", "old", "file-stale")
+        ]
+
+        result = synchronizer.apply(
+            plan_delta({}, {})
+        )
+
+        self.assertEqual(0, result.detached_files)
 
 
 if __name__ == "__main__":
