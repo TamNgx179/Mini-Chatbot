@@ -1,0 +1,13 @@
+# Local tooling, secrets, generated output, and test-only files.
+.git
+.github
+.env
+.venv
+venv
+__pycache__
+*.py[cod]
+.pytest_cache
+artifacts
+data/state
+tests
+*.pdf

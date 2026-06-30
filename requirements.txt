@@ -1,0 +1,10 @@
+# Content ingestion.
+beautifulsoup4>=4.13,<5
+markdownify>=1.2,<2
+python-slugify>=8.0,<9
+requests>=2.32,<3
+
+# OpenAI synchronization and configuration.
+openai>=2.44,<3
+python-dotenv>=1.1,<2
+tiktoken>=0.13,<1

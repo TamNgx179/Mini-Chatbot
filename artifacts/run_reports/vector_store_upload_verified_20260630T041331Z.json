@@ -1,0 +1,2039 @@
+{
+  "timestamp_utc": "20260630T041331Z",
+  "mode": "upload_verified",
+  "corpus_sha256": "80832a55de44418fb5ffbe1cc9b88adaccaa6bfdc69e249764917e731fb5f50a",
+  "chunking_strategy": {
+    "type": "static",
+    "static": {
+      "max_chunk_size_tokens": 1200,
+      "chunk_overlap_tokens": 200
+    }
+  },
+  "chunk_estimate": {
+    "source_files": 402,
+    "total_tokens": 541835,
+    "estimated_chunks": 700,
+    "files": [
+      {
+        "filename": "about-the-onhold-devices-folder.md",
+        "token_count": 1366,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "accepted-payment-methods.md",
+        "token_count": 592,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "add-1-or-multiple-assets-to-many-playlists-at-the-same-time.md",
+        "token_count": 290,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "adjust-the-gpu-memory-on-the-raspberry-pi.md",
+        "token_count": 419,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "adjusting-social-news-wall-speeds.md",
+        "token_count": 124,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "advanced-custom-domain-mapping.md",
+        "token_count": 1021,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "advanced-enforce-sso-login-for-your-account.md",
+        "token_count": 1006,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "advanced-how-to-assign-security-for-users-to-only-edit-certain-zones-of-the-screens.md",
+        "token_count": 869,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "advanced-how-to-install-activate-optisigns-remote-agent-on-windows.md",
+        "token_count": 568,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "advanced-how-to-manually-install-activate-optisigns-remote-agent-on-linux-or-raspberry-pi.md",
+        "token_count": 779,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "advanced-playlist-item-playback-control-campaign-management.md",
+        "token_count": 1979,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "advanced-proof-of-play-or-playback-report.md",
+        "token_count": 1341,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "advanced-security-managing-user-roles.md",
+        "token_count": 1839,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "ai-camera-app-quick-start.md",
+        "token_count": 2237,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "amazon-fire-stick-and-security-considerations.md",
+        "token_count": 1042,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "amazon-firestick.md",
+        "token_count": 1782,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "amazon-signage-stick.md",
+        "token_count": 1069,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "amazon-tv-firestick-troubleshooting-guide.md",
+        "token_count": 1385,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "android-tv-chromecast.md",
+        "token_count": 813,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "animation.md",
+        "token_count": 2244,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "api-reference.md",
+        "token_count": 124,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "apple-tv-player-release-notes-limitations.md",
+        "token_count": 362,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "assign-content-to-your-screens.md",
+        "token_count": 501,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "assign-default-content-for-schedules.md",
+        "token_count": 525,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "audience-intelligence-ai-camera-faqs.md",
+        "token_count": 1065,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "billing-how-do-i-change-my-subscription-plan.md",
+        "token_count": 1024,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "brand-kit-and-enforcing-brand-guidelines.md",
+        "token_count": 1340,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "brightsign-players.md",
+        "token_count": 1401,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "build-integration-using-optisigns-enterprise-app.md",
+        "token_count": 1465,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "can-i-disable-the-download-button-for-assets.md",
+        "token_count": 282,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "can-i-have-my-invoices-receipts-sent-to-a-different-email-address.md",
+        "token_count": 120,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "cannot-find-the-optisigns-app-on-your-samsung-smart-tv.md",
+        "token_count": 370,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "changing-screen-s-orientation-portrait-landscape.md",
+        "token_count": 266,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "chromeos-pwa-instructions.md",
+        "token_count": 2305,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "clean-install-of-optisigns-player-on-windows.md",
+        "token_count": 355,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "clean-install-optisigns-on-raspberry-pi-linux.md",
+        "token_count": 153,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "configuring-mass-deployment-with-jamf-pro-mdm-on-apple-devices.md",
+        "token_count": 1012,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "connect-cisco-webex-rooms-to-optisigns-digital-signage.md",
+        "token_count": 2112,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "connect-google-meet-hardware-to-optisigns-digital-signage.md",
+        "token_count": 2387,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "connect-microsoft-teams-rooms-to-optisigns-digital-signage.md",
+        "token_count": 2681,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "connect-zoom-rooms-to-optisigns-digital-signage.md",
+        "token_count": 2281,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "creating-and-using-schedules-with-optisigns.md",
+        "token_count": 1966,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "custom-branding-settings.md",
+        "token_count": 1448,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "customize-text.md",
+        "token_count": 3837,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "data-residency-and-optisigns.md",
+        "token_count": 260,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "designer-2-0-new-features.md",
+        "token_count": 3293,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "difference-between-instagram-instagram-business-app.md",
+        "token_count": 286,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "disk-encryption.md",
+        "token_count": 855,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "display-device-info-onscreen.md",
+        "token_count": 1438,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "display-powerpoint-google-slides-in-whole-screen-when-casting-from-macbook-pro.md",
+        "token_count": 443,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "display-salesforce-dashboards-with-mfa-using-web-scripting.md",
+        "token_count": 966,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "displaying-sharepoint-sites-on-optisigns.md",
+        "token_count": 1644,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "does-optisigns-offer-non-profit-education-discount.md",
+        "token_count": 250,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "edit-screen-what-does-each-option-do.md",
+        "token_count": 2843,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "enabling-lock-down-mode-on-touch-screen-devices.md",
+        "token_count": 2040,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "engage-plan-faqs.md",
+        "token_count": 778,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "error-handling.md",
+        "token_count": 266,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "event-logging-and-analytics-for-external-communication-rs-232.md",
+        "token_count": 1276,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "external-storage-on-optisigns-devices.md",
+        "token_count": 295,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "fireos-tvs-amazon-insigna-toshiba-tcl.md",
+        "token_count": 1016,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "fixing-unexpected-screen-rotation-incorrect-orientation-with-optisigns-android-stick.md",
+        "token_count": 394,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "folder-level-permissions.md",
+        "token_count": 2000,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "generate-manage-optisigns-api-key.md",
+        "token_count": 428,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "get-started-with-optisigns-api.md",
+        "token_count": 589,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "getting-started-with-an-optisigns-free-trial.md",
+        "token_count": 1176,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "getting-started-with-designer.md",
+        "token_count": 4911,
+        "estimated_chunks": 5
+      },
+      {
+        "filename": "getting-started-with-touch-screen-kiosks.md",
+        "token_count": 3035,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "graphql-api-tutorial-pair-and-assign-content-to-screen.md",
+        "token_count": 780,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "guide-for-creating-content-with-optisigns.md",
+        "token_count": 2329,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "handle-oauth-authentication-using-api-gateway-pre-request-configuration.md",
+        "token_count": 686,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "host-your-html-js-or-create-your-own-web-app-with-hosted-website.md",
+        "token_count": 918,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-can-i-improve-stability-of-fire-tv-as-digital-signage-player.md",
+        "token_count": 144,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-can-i-remotely-start-restart-optisigns-app-on-fire-tv.md",
+        "token_count": 444,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-can-i-remove-delete-uploaded-files-or-assets.md",
+        "token_count": 191,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-do-i-suggest-new-features-improvement.md",
+        "token_count": 117,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-does-pre-configured-devices-labeled-in-shipping-package.md",
+        "token_count": 222,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-far-back-or-how-many-posts-will-be-fetched-for-my-social-walls.md",
+        "token_count": 118,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-access-the-troubleshooting-page-of-the-optisigns-player.md",
+        "token_count": 1328,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-add-a-microsoft-365-excel-spreadsheet-as-a-datasource-for-optisync.md",
+        "token_count": 949,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-add-a-qr-code-in-designs-using-optisigns-designer.md",
+        "token_count": 434,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-add-captions-to-vimeo-videos.md",
+        "token_count": 500,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-add-google-sheets-as-a-datasource-for-optisync.md",
+        "token_count": 812,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-add-use-vimeo-video-with-optisigns.md",
+        "token_count": 364,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-allow-the-optisigns-app-to-access-local-storage-on-a-fire-stick.md",
+        "token_count": 552,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-approve-optisigns-as-enterprise-app-on-microsoft-azure-for-power-bi-calendar-etc-access.md",
+        "token_count": 1111,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-best-use-canva-with-optisigns.md",
+        "token_count": 1707,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-cancel-subscription-or-pause-subscription-for-seasonal-use-case.md",
+        "token_count": 733,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-change-account-owners.md",
+        "token_count": 452,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-change-billing-information.md",
+        "token_count": 455,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-change-close-nav-bar-styler-preferences.md",
+        "token_count": 489,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-change-time-zone-on-your-fire-stick-device.md",
+        "token_count": 450,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-change-time-zone-on-your-raspberry-pi-device.md",
+        "token_count": 552,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-check-wifi-signal-strength-on-the-amazon-fire-tv-stick.md",
+        "token_count": 162,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-clean-data-on-the-optisigns-android-stick.md",
+        "token_count": 319,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-clear-cache-on-a-brightsign-player.md",
+        "token_count": 887,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-clear-cache-on-your-fire-stick-device.md",
+        "token_count": 569,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-configure-multi-factor-authentication-with-your-optisigns-account.md",
+        "token_count": 611,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-connect-to-802-1x-enterprise-wifi-on-raspberry-pi.md",
+        "token_count": 572,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-connect-to-wifi-for-raspberry-pi.md",
+        "token_count": 695,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-contact-optisigns-support.md",
+        "token_count": 343,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-control-and-schedule-playlist-items.md",
+        "token_count": 735,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-create-a-content-library-kiosk.md",
+        "token_count": 1847,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-create-a-scrolling-strip-bars.md",
+        "token_count": 648,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-create-an-attract-screen-for-your-kiosk.md",
+        "token_count": 1049,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-create-and-use-google-reviews-wall.md",
+        "token_count": 1022,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-create-and-use-instagram-wall.md",
+        "token_count": 1216,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-create-and-use-nested-playlists.md",
+        "token_count": 622,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-create-and-use-operational-schedules-hdmi-cec-rs-232.md",
+        "token_count": 2206,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "how-to-create-and-use-qr-code-call-to-action-app.md",
+        "token_count": 855,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-create-and-use-the-split-screen-app.md",
+        "token_count": 1772,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-create-and-use-virtual-screen-app.md",
+        "token_count": 616,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-create-and-use-yelp-reviews-wall.md",
+        "token_count": 797,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-create-custom-news-feeds-with-optisync.md",
+        "token_count": 4279,
+        "estimated_chunks": 5
+      },
+      {
+        "filename": "how-to-create-use-playlists.md",
+        "token_count": 1173,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-customize-the-thumbnail-of-files-assets-and-folders.md",
+        "token_count": 441,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-delete-your-account-from-optisigns.md",
+        "token_count": 352,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-design-kiosk-apps-using-kiosk-designer-pro.md",
+        "token_count": 1535,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-display-birthday-lists-with-optisync-data-mapping-and-google-sheets.md",
+        "token_count": 2549,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "how-to-display-content-inside-websites-that-require-login.md",
+        "token_count": 523,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-display-dynamic-event-schedules-using-optisync.md",
+        "token_count": 3368,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "how-to-display-google-slide-in-portrait-mode.md",
+        "token_count": 336,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-display-microsoft-power-bi-dashboards-reports-with-optisigns.md",
+        "token_count": 4647,
+        "estimated_chunks": 5
+      },
+      {
+        "filename": "how-to-display-microsoft-teams-on-optisigns.md",
+        "token_count": 905,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-display-smartsheet-report-on-optisigns.md",
+        "token_count": 732,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-enable-auto-start-on-fireos-8-devices-like-amazon-fire-tv-stick-4k-gen-2-2023-model.md",
+        "token_count": 990,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-enable-disable-auto-update-for-optisigns-app-on-fire-tv.md",
+        "token_count": 379,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-enable-ssh-for-your-raspberry-pi.md",
+        "token_count": 306,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-export-high-resolution-canvas-template-designs.md",
+        "token_count": 166,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-factory-reset-your-fire-stick-device.md",
+        "token_count": 407,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-fix-the-scaling-issue-on-optisigns-android-device-gen-3.md",
+        "token_count": 491,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-fix-the-scaling-issue-on-optisigns-android-device.md",
+        "token_count": 487,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-get-google-review-link.md",
+        "token_count": 304,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-get-the-list-of-playlists-where-the-asset-is-used.md",
+        "token_count": 370,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-get-the-mac-address-on-your-media-player.md",
+        "token_count": 828,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-get-the-most-out-of-your-digital-signs.md",
+        "token_count": 867,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-hide-certain-templates-categories-in-designers.md",
+        "token_count": 185,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-install-a-root-certificate-and-display-an-internal-website-on-screens.md",
+        "token_count": 3340,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "how-to-install-an-apk-file-on-your-fire-tv.md",
+        "token_count": 550,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-install-optisigns-as-an-apk-file-on-android-devices.md",
+        "token_count": 1658,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-install-optisigns-as-channel-app-on-roku.md",
+        "token_count": 883,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-install-optisigns-as-screensaver-on-roku.md",
+        "token_count": 706,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-install-optisigns-on-samsung-tizen-smart-tvs.md",
+        "token_count": 788,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-install-optisigns-player-on-android-boxes.md",
+        "token_count": 916,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-install-optisigns-player-on-apple-tv.md",
+        "token_count": 889,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-integrate-api-and-publish-api-data-via-optisync.md",
+        "token_count": 4215,
+        "estimated_chunks": 5
+      },
+      {
+        "filename": "how-to-integrate-bonusly-digital-signage-with-optisigns.md",
+        "token_count": 783,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-keep-optisigns-running-on-fire-stick.md",
+        "token_count": 373,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-link-instagram-business-or-creator-account-to-facebook-account.md",
+        "token_count": 471,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-lockdown-ipad-single-app-with-guided-accessibility.md",
+        "token_count": 509,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-manage-and-edit-your-playlist-settings.md",
+        "token_count": 2074,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-manage-sub-account-billing-with-optisigns.md",
+        "token_count": 681,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-manually-install-activate-optisigns-ai-add-on-on-linux-or-raspberry-pi.md",
+        "token_count": 774,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-mass-deploy-optisigns-on-raspberry-pi-devices.md",
+        "token_count": 240,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-mix-playlists-and-maintain-screen-time-share-with-optisigns-content-rotation-app.md",
+        "token_count": 1397,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-move-screen-to-other-team.md",
+        "token_count": 446,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-order-a-preconfigured-optisigns-android-player-device.md",
+        "token_count": 706,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-organize-templates-and-share-across-teams.md",
+        "token_count": 677,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-perform-mass-provisioning-with-optisigns.md",
+        "token_count": 2101,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-play-licensed-background-music-on-digital-signs-with-optisound.md",
+        "token_count": 1487,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-preview-a-screen.md",
+        "token_count": 191,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-put-live-tv-on-your-screens-with-optisigns.md",
+        "token_count": 1023,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-put-zendesk-dashboard-on-your-signs.md",
+        "token_count": 493,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-re-encode-video-files-for-better-compatibility-on-your-devices.md",
+        "token_count": 453,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-replace-update-an-existing-asset-image-video-documents.md",
+        "token_count": 253,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-run-optisigns-ai-add-on-on-start-up-in-windows.md",
+        "token_count": 416,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-set-an-asset-to-live-or-expire-at-specific-time.md",
+        "token_count": 1278,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-set-up-a-power-bi-service-principal-for-use-in-optisigns.md",
+        "token_count": 1774,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-set-up-an-instagram-business-creator-account.md",
+        "token_count": 608,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-set-up-an-outlook-calendar-app-with-shared-permissions.md",
+        "token_count": 1166,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-set-up-audit-log-for-your-account.md",
+        "token_count": 660,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-set-up-dynamic-data-mapping-with-optisync.md",
+        "token_count": 3406,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "how-to-set-up-monitoring-alert-feature.md",
+        "token_count": 1030,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-set-up-saml-2-0-with-optisigns-and-google-workspace.md",
+        "token_count": 2131,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-set-up-saml-2-0-with-optisigns-and-ms-entra-id-formerly-azure-ad.md",
+        "token_count": 4105,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "how-to-set-up-saml-2-0-with-optisigns-and-okta.md",
+        "token_count": 2377,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "how-to-set-up-saml-2-0-with-optisigns-and-onelogin-shibboleth.md",
+        "token_count": 2031,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-set-up-saml-2-0-with-optisigns-and-onelogin.md",
+        "token_count": 1847,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-setup-aericast-meet-wireless-video-conferencing.md",
+        "token_count": 1030,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-setup-wifi-with-optisigns-admin-mobile-app-on-optisigns-pre-configured-android-player.md",
+        "token_count": 775,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-share-contents-with-other-users-teams.md",
+        "token_count": 649,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-share-playlist-and-folder-with-external-users.md",
+        "token_count": 1257,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-start-optisigns-automatically-when-devices-boot-up.md",
+        "token_count": 224,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-tell-which-dropbox-account-that-i-linked-to-optisigns.md",
+        "token_count": 203,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-uninstall-reinstall-optisigns-app-from-your-fire-stick-device.md",
+        "token_count": 743,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-unpair-a-device-screen.md",
+        "token_count": 201,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-unpin-optisigns-app-on-your-managed-android-stick-player.md",
+        "token_count": 303,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-update-fire-tv-os-to-latest-version.md",
+        "token_count": 423,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-upload-manage-your-files-assets.md",
+        "token_count": 927,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-a-pdf-with-optisigns.md",
+        "token_count": 419,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-advanced-website-app.md",
+        "token_count": 655,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-aericast-add-on-for-wireless-presentation-and-video-conferencing.md",
+        "token_count": 1433,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-airtable-with-optisigns.md",
+        "token_count": 616,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-approval-workflow-feature.md",
+        "token_count": 1154,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-asana-app.md",
+        "token_count": 366,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-calendar-mix-app.md",
+        "token_count": 1104,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-check-in-app-with-sms-follow-up.md",
+        "token_count": 1929,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-content-tags-in-the-playlist.md",
+        "token_count": 1652,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-coordinate-based-positioning-and-sizing-of-elements-in-optisigns-designer.md",
+        "token_count": 637,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-crypto-index-crypto-exchange-app.md",
+        "token_count": 612,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-currency-exchange-app.md",
+        "token_count": 557,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-dropbox-app.md",
+        "token_count": 1109,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-embed-app.md",
+        "token_count": 579,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-emergency-message-alert-app.md",
+        "token_count": 1540,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-facebook-live-stream-app.md",
+        "token_count": 650,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-facebook-recommendations-app.md",
+        "token_count": 758,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-facebook-video-app.md",
+        "token_count": 519,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-follow-us-app.md",
+        "token_count": 645,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-google-calendar-with-optisigns.md",
+        "token_count": 1493,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-google-docs-with-optisigns.md",
+        "token_count": 793,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-google-drive-app.md",
+        "token_count": 1147,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-google-sheets-with-optisigns.md",
+        "token_count": 1690,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-google-slides-with-optisigns.md",
+        "token_count": 1969,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-google-traffic-app.md",
+        "token_count": 577,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-google-trends-app.md",
+        "token_count": 687,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-hdmi-other-video-input-sources-in-with-optisigns.md",
+        "token_count": 733,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-icloud-calendar-with-optisigns.md",
+        "token_count": 1301,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-imovie-content-with-optisigns.md",
+        "token_count": 373,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-instagram-business-app.md",
+        "token_count": 1652,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-instagram-counter-app.md",
+        "token_count": 720,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-kiosk-lite-formerly-known-as-interactive-kiosk-app.md",
+        "token_count": 1303,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-linkedin-app.md",
+        "token_count": 1370,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-live-tv-with-ads-app.md",
+        "token_count": 1008,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-livestream-com-app.md",
+        "token_count": 582,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-market-index-app.md",
+        "token_count": 618,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-matterport-app.md",
+        "token_count": 472,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-microsoft-excel-online-with-optisigns.md",
+        "token_count": 1408,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-microsoft-outlook-calendar-with-optisigns.md",
+        "token_count": 2217,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "how-to-use-microsoft-powerpoint-with-optisigns.md",
+        "token_count": 2035,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-microsoft-teams-live-app-with-optisigns.md",
+        "token_count": 744,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-microsoft-teams-meeting-app-with-optisigns.md",
+        "token_count": 629,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-monday-com-app.md",
+        "token_count": 440,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-mrss-feeds-with-optisigns.md",
+        "token_count": 803,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-notion-app.md",
+        "token_count": 444,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-on-this-day-app.md",
+        "token_count": 568,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-optisigns-screen-capture-app.md",
+        "token_count": 832,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-optisigns-template-designer-to-make-your-digital-signs-in-minutes.md",
+        "token_count": 1606,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-optisigns-with-microsoft-teams-rooms.md",
+        "token_count": 1619,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-overlay-layers-with-optisigns.md",
+        "token_count": 437,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-published-google-slides-with-optisigns-old-way.md",
+        "token_count": 1116,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-qr-overlay-app-in-engage.md",
+        "token_count": 936,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-remote-command-execution-windows-linux.md",
+        "token_count": 963,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-rss-feeds-with-optisigns.md",
+        "token_count": 1092,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-rtsp-stream-on-windows-or-raspberry-pi-via-optisigns.md",
+        "token_count": 1228,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-rtsp-streams-on-optisigns-devices.md",
+        "token_count": 560,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-scrolling-website-app.md",
+        "token_count": 547,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-secured-dashboard-app.md",
+        "token_count": 980,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-simple-calendar-app.md",
+        "token_count": 541,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-slack-app.md",
+        "token_count": 1393,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-streaming-app-with-optisigns.md",
+        "token_count": 462,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-atlassian-jira-app.md",
+        "token_count": 693,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-cap-alert-app.md",
+        "token_count": 3282,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "how-to-use-the-cbc-news-app.md",
+        "token_count": 941,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-cnn-news-app.md",
+        "token_count": 989,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-countdown-app.md",
+        "token_count": 1771,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-countup-app.md",
+        "token_count": 1715,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-data-studio-app.md",
+        "token_count": 1185,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-emergency-feed-app.md",
+        "token_count": 1416,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-espn-news-app.md",
+        "token_count": 1018,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-facebook-counter-app.md",
+        "token_count": 1207,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-facebook-page-app.md",
+        "token_count": 1707,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-flash-message-app.md",
+        "token_count": 1782,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-google-ads-dashboard-app.md",
+        "token_count": 1739,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-google-search-console-app.md",
+        "token_count": 1683,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-guardian-app.md",
+        "token_count": 991,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-local-folder-app-in-optisigns.md",
+        "token_count": 1960,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-microsoft-meeting-room-app.md",
+        "token_count": 1844,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-mindmeister-app.md",
+        "token_count": 597,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-mobile-app-for-remote-control.md",
+        "token_count": 931,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-motivational-quote-app.md",
+        "token_count": 606,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-musthavemenus-app-with-optisigns.md",
+        "token_count": 726,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-new-york-times-app.md",
+        "token_count": 1044,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-news-app.md",
+        "token_count": 1108,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-onedrive-app.md",
+        "token_count": 1379,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-optidev-app.md",
+        "token_count": 1361,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-optisigns-mobile-admin-app.md",
+        "token_count": 2944,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "how-to-use-the-qr-scan-to-interact-touchless-qr-app.md",
+        "token_count": 87658,
+        "estimated_chunks": 88
+      },
+      {
+        "filename": "how-to-use-the-simple-clock-app.md",
+        "token_count": 1470,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-social-mix-app.md",
+        "token_count": 973,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-stock-app.md",
+        "token_count": 1206,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-tableau-app.md",
+        "token_count": 2631,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "how-to-use-the-taggbox-display-app-with-optisigns.md",
+        "token_count": 653,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-techcrunch-news-app.md",
+        "token_count": 1003,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-video-stream-app.md",
+        "token_count": 562,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-wall-street-journal-app.md",
+        "token_count": 962,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-weather-alert-app.md",
+        "token_count": 797,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-the-web-scripting-app.md",
+        "token_count": 2254,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "how-to-use-the-website-app-and-display-urls-on-optisigns.md",
+        "token_count": 1225,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-the-youtube-dashboard-app.md",
+        "token_count": 1690,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-toast-api-data-with-optisigns.md",
+        "token_count": 1304,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-trello-app.md",
+        "token_count": 360,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-twitch-app.md",
+        "token_count": 622,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-usb-hub-adaptor-connect-to-your-fire-stick.md",
+        "token_count": 379,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-waitwhile-app.md",
+        "token_count": 814,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-walls-io-app.md",
+        "token_count": 634,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-weather-apps-based-on-device-location.md",
+        "token_count": 431,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-weather-apps-in-optisigns.md",
+        "token_count": 2201,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "how-to-use-website-screenshot-app.md",
+        "token_count": 573,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-world-clock-app.md",
+        "token_count": 556,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-yammer-app-on-optisigns.md",
+        "token_count": 904,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-youtube-channel-with-optisigns.md",
+        "token_count": 751,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-youtube-live-schedule-with-optisigns.md",
+        "token_count": 1382,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "how-to-use-youtube-live-with-optisigns.md",
+        "token_count": 343,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-youtube-playlist-with-optisigns.md",
+        "token_count": 532,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-use-youtube-with-optisigns.md",
+        "token_count": 726,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "how-to-using-sepa-and-ideal-for-eur-currency-subscription-payments.md",
+        "token_count": 654,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "i-received-the-optisigns-device-but-it-s-onhold-and-cannot-assign-content.md",
+        "token_count": 384,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "install-update-optisigns-player-on-rpi-via-script.md",
+        "token_count": 179,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "integrating-point-of-sale-pos-systems-to-build-digital-menu-boards-with-optisync.md",
+        "token_count": 3979,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "introduction.md",
+        "token_count": 480,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "is-there-storage-limit-for-my-account.md",
+        "token_count": 133,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "kiosk-setup-hub.md",
+        "token_count": 669,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "kiosk10.md",
+        "token_count": 2478,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "kiosk32.md",
+        "token_count": 3419,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "kiosk50.md",
+        "token_count": 2838,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "legacy-datasources.md",
+        "token_count": 1840,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "lg-webos-signage-commercial-grade.md",
+        "token_count": 2075,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "linux.md",
+        "token_count": 1859,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "list-of-supported-cities-for-weather-wall-city-themes.md",
+        "token_count": 581,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "macos.md",
+        "token_count": 893,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "making-a-video-wall-with-optisigns-video-wall-app.md",
+        "token_count": 4185,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "manually-control-playlist-playback-with-optisigns.md",
+        "token_count": 434,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "map-view-screen-location-settings.md",
+        "token_count": 214,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "moderate-your-social-media-feeds.md",
+        "token_count": 525,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "move-screens-or-devices-from-one-account-to-another.md",
+        "token_count": 861,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "multi-select-assets-in-files-assets-view.md",
+        "token_count": 315,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "multi-users-invite-your-team-members-to-your-account.md",
+        "token_count": 507,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "multilingual-and-multi-currency.md",
+        "token_count": 523,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "my-image-content-are-bleeding-off-the-screens-with-fire-tv-need-screen-calibration.md",
+        "token_count": 499,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "my-image-content-are-bleeding-off-the-screens-with-windows-linux-mac-raspberry-pi-app-need-screen-calibration.md",
+        "token_count": 286,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "navigating-through-optisigns-template-library.md",
+        "token_count": 910,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "operational-schedule-troubleshooting.md",
+        "token_count": 3555,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "optisigns-digital-signage-app-for-zoom-adding-using-and-removing-the-app.md",
+        "token_count": 1905,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "optisigns-getting-started-guide.md",
+        "token_count": 1339,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "optisigns-iot-sensor-add-on-quick-start.md",
+        "token_count": 3357,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "optisigns-pro-player-advanced-features.md",
+        "token_count": 2860,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "optisigns-pro-promax-player-troubleshooting-guide.md",
+        "token_count": 3130,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "optisigns-side-menu-options.md",
+        "token_count": 2283,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "optistick-troubleshooting-guide.md",
+        "token_count": 4025,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "optistick.md",
+        "token_count": 1476,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "organizing-your-files-assets-playlists-and-schedules-by-using-folders.md",
+        "token_count": 332,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "pagination.md",
+        "token_count": 475,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "performance-stability-issues-on-android-devices-and-best-practices.md",
+        "token_count": 721,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "photos-gifs-and-qr-codes-in-designer.md",
+        "token_count": 4408,
+        "estimated_chunks": 5
+      },
+      {
+        "filename": "powerpoint-resolution-size-for-use-with-digital-signage.md",
+        "token_count": 961,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "powerpoint-transition-and-animation-effect.md",
+        "token_count": 218,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "pre-configure-wi-fi-with-optisigns-devices.md",
+        "token_count": 299,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "present-share-ios-android-phone-tablet-to-your-screen-with-optisigns-aericast-add-on.md",
+        "token_count": 582,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "present-share-your-screen-with-optisigns-aericast-add-on.md",
+        "token_count": 708,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "promax.md",
+        "token_count": 3366,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "proplayer.md",
+        "token_count": 2755,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "push-contents-to-your-screens.md",
+        "token_count": 1160,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "raspberry-pi.md",
+        "token_count": 2535,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "remotely-control-and-command-optisigns-devices.md",
+        "token_count": 3177,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "resolve-autostart-issues-on-your-android-tv-devices.md",
+        "token_count": 397,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "roku-release-notes-limitation.md",
+        "token_count": 546,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "roku-troubleshooting-guide.md",
+        "token_count": 853,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "room-integrations-turn-your-meeting-rooms-into-digital-signage.md",
+        "token_count": 1996,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "saml-integration-strategies-best-practices.md",
+        "token_count": 1622,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "samsung-smart-signage-platform-sssp-supported-model-list.md",
+        "token_count": 940,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "samsung-tizen-tvs-troubleshooting-guide.md",
+        "token_count": 782,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "set-optisigns-as-screensaver-on-windows.md",
+        "token_count": 920,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "set-up-add-a-screen.md",
+        "token_count": 901,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "setting-up-your-samsung-smart-signage-platform-sssp-commercial-grade.md",
+        "token_count": 2170,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "shapes-and-elements.md",
+        "token_count": 3615,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "show-hide-downloading-status-on-your-player.md",
+        "token_count": 331,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "show-hide-offline-indicator-on-your-player.md",
+        "token_count": 341,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "show-offline-indicator-feature.md",
+        "token_count": 176,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "show-youtube-video-s-subtitle-closed-caption.md",
+        "token_count": 184,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "silent-installation-process-for-optisigns-player-on-windows.md",
+        "token_count": 383,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "stretch-your-images-document-stretch-vs-fit-vs-zoom-your-content.md",
+        "token_count": 356,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "subscription-function-in-graphql.md",
+        "token_count": 669,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "synchronized-playback-sync-play-feature.md",
+        "token_count": 557,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "tagging-in-optisigns.md",
+        "token_count": 2682,
+        "estimated_chunks": 3
+      },
+      {
+        "filename": "the-optisigns-app-keeps-turning-on-the-tv-screen.md",
+        "token_count": 268,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "there-s-no-sounds-output-for-my-raspberry-pi.md",
+        "token_count": 508,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "tutorial-create-update-add-remove-items-from-playlists.md",
+        "token_count": 1045,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "tutorial-creating-or-updating-website-assets-using-graphql.md",
+        "token_count": 571,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "tutorial-creating-schedules-and-adding-schedule-items-using-graphql.md",
+        "token_count": 1262,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "update-optisigns-player-on-optisigns-pro-player-gen-2-via-script.md",
+        "token_count": 467,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "use-your-mac-windows-device-as-a-test-screen.md",
+        "token_count": 407,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "user-management-example-chain-restaurant-or-retail-store-with-multiple-locations.md",
+        "token_count": 3518,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "using-an-enterprise-network-802-1x-with-optisigns.md",
+        "token_count": 1360,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "using-eyedrop-feature-to-select-color-in-designer-app.md",
+        "token_count": 201,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "using-rs-232-to-schedule-tv-power-on-off-or-other-commands.md",
+        "token_count": 1389,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "video-codec-or-video-playback-issues.md",
+        "token_count": 1029,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "view-billing-history-and-download-receipts.md",
+        "token_count": 172,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "web-browser-as-optisigns-player.md",
+        "token_count": 109,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "what-are-feeds-and-how-to-use-it.md",
+        "token_count": 906,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "what-do-i-get-with-an-optisigns-free-plan.md",
+        "token_count": 1390,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "what-happen-if-internet-connection-is-lost.md",
+        "token_count": 274,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "what-hardware-and-devices-are-supported.md",
+        "token_count": 1341,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "what-if-i-want-to-increase-decrease-number-of-screens-during-the-month.md",
+        "token_count": 252,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "what-if-the-optisigns-app-does-not-auto-start-on-an-android-tv.md",
+        "token_count": 306,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "what-types-of-files-are-supported.md",
+        "token_count": 662,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "where-to-buy-optisigns-devices.md",
+        "token_count": 3421,
+        "estimated_chunks": 4
+      },
+      {
+        "filename": "whitelist-optisigns-ip-addresses-ports.md",
+        "token_count": 849,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "why-does-my-screen-show-as-offline-on-the-web-portal.md",
+        "token_count": 288,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "widgets-in-designer.md",
+        "token_count": 5165,
+        "estimated_chunks": 5
+      },
+      {
+        "filename": "windows.md",
+        "token_count": 800,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "working-with-teams-and-security-levels.md",
+        "token_count": 1312,
+        "estimated_chunks": 2
+      },
+      {
+        "filename": "your-facebook-page-doesn-t-show-in-the-dropdown-list.md",
+        "token_count": 363,
+        "estimated_chunks": 1
+      },
+      {
+        "filename": "your-templates.md",
+        "token_count": 925,
+        "estimated_chunks": 1
+      }
+    ]
+  },
+  "openai": {
+    "vector_store_id": "vs_6a4340bbf43481918cff2ccefba7b4aa",
+    "batch_id": "vsfb_ibj_6a4340e925d481f4a735d70f5c84540f",
+    "store_status": "completed",
+    "batch_status": "completed",
+    "completed_files": 402,
+    "failed_files": 0,
+    "in_progress_files": 0,
+    "vector_store_bytes": 2927714
+  }
+}

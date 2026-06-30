@@ -1,0 +1,11 @@
+# Python caches and local environments.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets and machine-local runtime state.
+.env
+artifacts/logs/*.log
+data/state/vector_store.json

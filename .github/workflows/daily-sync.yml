@@ -1,0 +1,62 @@
+name: Daily OptiBot Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run once a day at 02:17 in Vietnam. Avoiding the top of the hour reduces
+    # the chance of delays during peak GitHub Actions scheduler load.
+    - cron: "17 2 * * *"
+      timezone: "Asia/Ho_Chi_Minh"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-optibot-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_VECTOR_STORE_ID: ${{ secrets.OPENAI_VECTOR_STORE_ID }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate deployment secrets
+        shell: bash
+        run: |
+          if [[ -z "$OPENAI_API_KEY" || -z "$OPENAI_VECTOR_STORE_ID" ]]; then
+            echo "Add OPENAI_API_KEY and OPENAI_VECTOR_STORE_ID as repository secrets."
+            exit 1
+          fi
+
+      - name: Build one-shot job image
+        run: docker build --tag optibot-daily-sync .
+
+      - name: Run full scrape and delta sync
+        shell: bash
+        run: |
+          mkdir -p artifacts/run_reports artifacts/logs
+          chmod -R a+rwX artifacts
+          set -o pipefail
+          docker run --rm \
+            -e OPENAI_API_KEY \
+            -e OPENAI_VECTOR_STORE_ID \
+            -v "$GITHUB_WORKSPACE/artifacts:/app/artifacts" \
+            optibot-daily-sync --all 2>&1 | tee artifacts/logs/daily-sync.log
+
+      - name: Publish last-run report and log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-sync-${{ github.run_number }}
+          path: |
+            artifacts/run_reports/daily_sync_*.json
+            artifacts/logs/daily-sync.log
+          if-no-files-found: warn
+          retention-days: 30
